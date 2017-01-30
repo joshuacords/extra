@@ -1,0 +1,103 @@
+Liferay@liferay-yrt887b MINGW64 /d/liferay-portal-master/portal-impl (JCords-LPS-23874)
+$ ant build-service
+Buildfile: D:\liferay-portal-master\portal-impl\build.xml
+
+build-service:
+     [java] Java Result: 1
+     [echo] Please set these arguments. Sample values are:
+     [echo]
+     [echo]     service.api.dir=${basedir}/../portal-kernel/src
+     [echo]     service.auto.import.default.references=true
+     [echo]     service.auto.namespace.tables=false
+     [echo]     service.bean.locator.util=com.liferay.portal.kernel.bean.PortalBeanLocatorUtil
+     [echo]     service.build.number=1
+     [echo]     service.build.number.increment=true
+     [echo]     service.hbm.file=${basedir}/src/META-INF/portal-hbm.xml
+     [echo]     service.impl.dir=${basedir}/src
+     [echo]     service.input.file=${service.file}
+     [echo]     service.model.hints.configs=classpath*:META-INF/portal-model-hints.xml,META-INF/portal-model-hints.xml,classpath*:META-INF/ext-model-hints.xml,classpath*:META-INF/portlet-model-hints.xml
+     [echo]     service.model.hints.file=${basedir}/src/META-INF/portal-model-hints.xml
+     [echo]     service.osgi.module=false
+     [echo]     service.plugin.name=
+     [echo]     service.props.util=com.liferay.portal.util.PropsUtil
+     [echo]     service.read.only.prefixes=fetch,get,has,is,load,reindex,search
+     [echo]     service.resource.actions.configs=META-INF/resource-actions/default.xml,resource-actions/default.xml
+     [echo]     service.resources.dir=${basedir}/src
+     [echo]     service.spring.file=${basedir}/src/META-INF/portal-spring.xml
+     [echo]     service.spring.namespaces=beans
+     [echo]     service.sql.dir=${basedir}/../sql
+     [echo]     service.sql.file=portal-tables.sql
+     [echo]     service.sql.indexes.file=indexes.sql
+     [echo]     service.sql.sequences.file=sequences.sql
+     [echo]     service.target.entity.name=${service.target.entity.name}
+     [echo]     service.test.dir=${basedir}/test/integration
+     [echo]
+     [echo] You can also customize the generated code by overriding the default templates with these optional system properties:
+     [echo]
+     [echo]     -Dservice.tpl.bad_alias_names=com/liferay/portal/tools/service/builder/dependencies/bad_alias_names.txt
+     [echo]     -Dservice.tpl.bad_column_names=com/liferay/portal/tools/service/builder/dependencies/bad_column_names.txt
+     [echo]     -Dservice.tpl.bad_json_types=com/liferay/portal/tools/service/builder/dependencies/bad_json_types.txt
+     [echo]     -Dservice.tpl.bad_table_names=com/liferay/portal/tools/service/builder/dependencies/bad_table_names.txt
+     [echo]     -Dservice.tpl.base_mode_impl=com/liferay/portal/tools/service/builder/dependencies/base_mode_impl.ftl
+     [echo]     -Dservice.tpl.blob_model=com/liferay/portal/tools/service/builder/dependencies/blob_model.ftl
+     [echo]     -Dservice.tpl.copyright.txt=copyright.txt
+     [echo]     -Dservice.tpl.ejb_pk=com/liferay/portal/tools/service/builder/dependencies/ejb_pk.ftl
+     [echo]     -Dservice.tpl.exception=com/liferay/portal/tools/service/builder/dependencies/exception.ftl
+     [echo]     -Dservice.tpl.extended_model=com/liferay/portal/tools/service/builder/dependencies/extended_model.ftl
+     [echo]     -Dservice.tpl.extended_model_base_impl=com/liferay/portal/tools/service/builder/dependencies/extended_model_base_impl.ftl
+     [echo]     -Dservice.tpl.extended_model_impl=com/liferay/portal/tools/service/builder/dependencies/extended_model_impl.ftl
+     [echo]     -Dservice.tpl.finder=com/liferay/portal/tools/service/builder/dependencies/finder.ftl
+     [echo]     -Dservice.tpl.finder_base_impl=com/liferay/portal/tools/service/builder/dependencies/finder_base_impl.ftl
+     [echo]     -Dservice.tpl.finder_util=com/liferay/portal/tools/service/builder/dependencies/finder_util.ftl
+     [echo]     -Dservice.tpl.hbm_xml=com/liferay/portal/tools/service/builder/dependencies/hbm_xml.ftl
+     [echo]     -Dservice.tpl.json_js=com/liferay/portal/tools/service/builder/dependencies/json_js.ftl
+     [echo]     -Dservice.tpl.json_js_method=com/liferay/portal/tools/service/builder/dependencies/json_js_method.ftl
+     [echo]     -Dservice.tpl.model=com/liferay/portal/tools/service/builder/dependencies/model.ftl
+     [echo]     -Dservice.tpl.model_cache=com/liferay/portal/tools/service/builder/dependencies/model_cache.ftl
+     [echo]     -Dservice.tpl.model_hints_xml=com/liferay/portal/tools/service/builder/dependencies/model_hints_xml.ftl
+     [echo]     -Dservice.tpl.model_impl=com/liferay/portal/tools/service/builder/dependencies/model_impl.ftl
+     [echo]     -Dservice.tpl.model_soap=com/liferay/portal/tools/service/builder/dependencies/model_soap.ftl
+     [echo]     -Dservice.tpl.model_wrapper=com/liferay/portal/tools/service/builder/dependencies/model_wrapper.ftl
+     [echo]     -Dservice.tpl.persistence=com/liferay/portal/tools/service/builder/dependencies/persistence.ftl
+     [echo]     -Dservice.tpl.persistence_impl=com/liferay/portal/tools/service/builder/dependencies/persistence_impl.ftl
+     [echo]     -Dservice.tpl.persistence_util=com/liferay/portal/tools/service/builder/dependencies/persistence_util.ftl
+     [echo]     -Dservice.tpl.props=com/liferay/portal/tools/service/builder/dependencies/props.ftl
+     [echo]     -Dservice.tpl.service=com/liferay/portal/tools/service/builder/dependencies/service.ftl
+     [echo]     -Dservice.tpl.service_base_impl=com/liferay/portal/tools/service/builder/dependencies/service_base_impl.ftl
+     [echo]     -Dservice.tpl.service_clp=com/liferay/portal/tools/service/builder/dependencies/service_clp.ftl
+     [echo]     -Dservice.tpl.service_clp_invoker=com/liferay/portal/tools/service/builder/dependencies/service_clp_invoker.ftl
+     [echo]     -Dservice.tpl.service_clp_message_listener=com/liferay/portal/tools/service/builder/dependencies/service_clp_message_listener.ftl
+     [echo]     -Dservice.tpl.service_clp_serializer=com/liferay/portal/tools/service/builder/dependencies/service_clp_serializer.ftl
+     [echo]     -Dservice.tpl.service_http=com/liferay/portal/tools/service/builder/dependencies/service_http.ftl
+     [echo]     -Dservice.tpl.service_impl=com/liferay/portal/tools/service/builder/dependencies/service_impl.ftl
+     [echo]     -Dservice.tpl.service_props_util=com/liferay/portal/tools/service/builder/dependencies/service_props_util.ftl
+     [echo]     -Dservice.tpl.service_soap=com/liferay/portal/tools/service/builder/dependencies/service_soap.ftl
+     [echo]     -Dservice.tpl.service_util=com/liferay/portal/tools/service/builder/dependencies/service_util.ftl
+     [echo]     -Dservice.tpl.service_wrapper=com/liferay/portal/tools/service/builder/dependencies/service_wrapper.ftl
+     [echo]     -Dservice.tpl.spring_xml=com/liferay/portal/tools/service/builder/dependencies/spring_xml.ftl
+     [echo]     -Dservice.tpl.spring_xml_session=com/liferay/portal/tools/service/builder/dependencies/spring_xml_session.ftl
+     [echo] Exception in thread "main" org.dom4j.DocumentException: service.xml (The system cannot find the file specified) Nested exception: service.xml (The system cannot find the file specified)
+     [echo]     at org.dom4j.io.SAXReader.read(SAXReader.java:266)
+     [echo]     at com.liferay.portal.tools.ToolsUtil._getContentDocument(ToolsUtil.java:530)
+     [echo]     at com.liferay.portal.tools.ToolsUtil.getContent(ToolsUtil.java:79)
+     [echo]     at com.liferay.portal.tools.service.builder.ServiceBuilder.<init>(ServiceBuilder.java:631)
+     [echo]     at com.liferay.portal.tools.service.builder.ServiceBuilder.main(ServiceBuilder.java:219)
+     [echo] Nested exception:
+     [echo] java.io.FileNotFoundException: service.xml (The system cannot find the file specified)
+     [echo]     at java.io.FileInputStream.open0(Native Method)
+     [echo]     at java.io.FileInputStream.open(FileInputStream.java:195)
+     [echo]     at java.io.FileInputStream.<init>(FileInputStream.java:138)
+     [echo]     at org.dom4j.io.SAXReader.read(SAXReader.java:243)
+     [echo]     at com.liferay.portal.tools.ToolsUtil._getContentDocument(ToolsUtil.java:530)
+     [echo]     at com.liferay.portal.tools.ToolsUtil.getContent(ToolsUtil.java:79)
+     [echo]     at com.liferay.portal.tools.service.builder.ServiceBuilder.<init>(ServiceBuilder.java:631)
+     [echo]     at com.liferay.portal.tools.service.builder.ServiceBuilder.main(ServiceBuilder.java:219)
+     [echo] Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=512m; support was removed in 8.0
+
+init-compile:
+
+compile:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=1024m; support was removed in 8.0
